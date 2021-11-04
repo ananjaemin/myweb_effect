@@ -4,9 +4,7 @@
     width: 3px;
     height: 400px;
     border: solid 2px rgb(32, 32, 32);
-    background-color: rgba(110, 109, 112, 0.3);
-    position: absolute;
-
+    background-color: rgba(117, 116, 119, 0.3);
 }
 
 input{
@@ -18,3 +16,42 @@ input[id="main"]:checked + label + div{
     height: 300px;
     transition: all 1s;
 }
+
+
+.effect_text{
+    position: absolute;
+  }
+
+  :root {
+      --shadow-color: #FF9E9E;
+      --shadow-color-light: red;
+    }
+    
+  
+    
+    .logo_text {
+      position: relative;
+      top:-270px;
+      font-size: 100px;
+      color: rgb(245, 91, 91);
+      animation: neon 3s infinite;
+      display: none;
+    }
+    
+    @keyframes neon {
+      0% {
+        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+        0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+        0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+      }
+      50% {
+        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+        0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+        0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+      }
+      100% {
+        text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+        0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+        0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+      }
+    }

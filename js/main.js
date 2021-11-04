@@ -1,5 +1,5 @@
 $( 'a.start_button' ).click( function() {
-    $( 'div.main_container' ).fadeOut(850);
+    $( 'div.main_container' ).fadeOut(500);
   } );
 
 
@@ -7,5 +7,11 @@ $( 'a.start_button' ).click( function() {
 $(document).ready(function(){
   $("a.start_button").click(function(){
     $("div.main_screen").fadeIn(400);
+  })
+});
+
+$(document).ready(function(){
+  $("a.start_button").click(function(){
+    $("div.logo_text").fadeIn(700);
   })
 });
